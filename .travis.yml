@@ -18,9 +18,6 @@ before_script:
 script:
   - travis_retry docker build -t "$image" .
 
-after_script:
-  - docker images
-
 after_success:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
   - docker push vdubyna/magento-container:${VERSION}-php;
