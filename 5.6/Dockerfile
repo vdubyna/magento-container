@@ -21,7 +21,7 @@ RUN build_packages=" \
     && docker-php-ext-install pcntl \
     && docker-php-ext-install pdo_mysql \
     && docker-php-ext-install soap \
-    && yes | pecl install xdebug && docker-php-ext-enable xdebug \
+    && yes | pecl install xdebug-2.5.5 && docker-php-ext-enable xdebug \
     && docker-php-ext-install xsl \
     && docker-php-ext-install zip \
     && docker-php-ext-install intl \
