@@ -11,7 +11,7 @@ services:
     volumes:
       - /var/www/html
   web:
-    image: vdubyna/magento-container-php-7.0
+    image: vdubyna/magento-container:7.0-php
     ports:
       - 80:80
       - 443:443

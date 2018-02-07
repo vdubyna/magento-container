@@ -3,15 +3,15 @@ services:
   unison:
     image: onnimonni/unison
     environment:
-      - UNISON_DIR=/var/www/project
+      - UNISON_DIR=/var/www/html
       - UNISON_UID=10000
       - UNISON_GID=10000
     ports:
       - "5000:5000"
     volumes:
-      - /var/www/project
+      - /var/www/html
   web:
-    image: vdubyna/magento-container-php-7.0
+    image: vdubyna/magento-container:7.2-php
     ports:
       - 80:80
       - 443:443
