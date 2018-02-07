@@ -12,7 +12,7 @@ Container does not includ the database container. Database should be on local(ho
 
 1. Put `docker-compose.yml` example into magento root directory
 2. Execute the following command `docker-compose up`
-3. Configure local.xml/env.php file to use `docker.for.mac.localhost` host
+3. Configure local.xml/env.php file to use `docker.for.mac.localhost` database host
 4. Run the unison filesync
 
 ```
